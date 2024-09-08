@@ -62,11 +62,11 @@ img{
 
 a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--secondary-color-dark);
 }
 
 body{
-    color: var(--white);
+    color: var(--black);
     font-family: "Reddit Sans Condensed", sans-serif;
 }
 
