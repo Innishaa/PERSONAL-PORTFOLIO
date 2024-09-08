@@ -164,6 +164,20 @@ header{
     font-weight: 500;
 
 }
+.My Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+
+}
+.My Projects-content h2{
+text-align: left;
+color: white;
+font-size: 42px;
+}
 
 .contact-form h2{
     text-align: center;
