@@ -70,7 +70,31 @@ body{
     font-family: "Reddit Sans Condensed", sans-serif;
 }
 
-
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background:#000807;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color:#b3b7ee;
+    text-shadow: 0 0 25px #b3b7ee,
+                 0 0 50px  #b3b7ee;
+    transform: scale(1.1);
+}
 nav{
     position:absolute;
     width: 100%;
@@ -81,12 +105,40 @@ nav{
     padding: 1rem;
 }
 
-nav .nav__logo a span{
+span{
     color: var(--secondary-color);
 
 }
-
-header{
+.navbar a{
+    font-size: 18px;
+    color: #FBF9FF;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#9395d3;
+    border-bottom: 3px solid #9395d3;
+}
+.contact{
+    padding: 10px 20px;
+    background-color: white;
+    color:#000807;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: #A2A3BB;
+    box-shadow:0 0 25px #9395d3;
+    color: white;
+}
+.home{
     height: 100vh;
     background-image: url("header-bg.png");
     background-position: center center;
@@ -94,27 +146,30 @@ header{
     background-size: cover;
 }
 
-.header__container{
-    height: 100%;
+.home-content{
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: right;
     justify-content: center;
+    border-left: 10px;
+    padding-left: 100px;
+    padding-top: 200px;
 }
-.header__container p {
+.home-content p {
     color:var(--secondary-color);
     max-width: 400px;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
-.header__container p span {
+.home-content p span {
     color: var(--white);
     padding: 0.5rem 1rem;
     background-color: var(--secondary-color-dark);
     border-radius: 5px;
     margin-right: 1rem;
 }
-.header__container h1{
+.home-content h1{
     font-size: 3rem;
     line-height: 3rem;
     color: var(--white);
@@ -160,6 +215,7 @@ header{
 .My Projects{
     display: flex;
     justify-content: center;
+    text-align:center;
     align-items: center;
     padding: 12% 8%;
     gap: 10em;
@@ -186,7 +242,7 @@ font-size: 42px;
     margin-bottom: 3em;
 
 }
-.contac-form form .input-box{
+.contact-form form .input-box{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -239,3 +295,25 @@ font-size: 42px;
         }
     }
     
+.footer{
+    position: relative;
+    background-color: #000807;
+    bottom:0;
+    width: 100%;
+    padding: 40px 0;
+}
+.footer .ul li a{
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    color:azure;
+}
+.footer .ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+ margin-top: 15px;
+ text-align: center;
+ font-size: 12px;
+}
+
