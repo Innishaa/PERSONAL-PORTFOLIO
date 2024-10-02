@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
     --primary-color:#000807; 
     --secondary-color: #b3b7ee;
@@ -123,6 +120,8 @@ span{
     border-bottom: 3px solid #9395d3;
 }
 .contact{
+    align-items:self-end;
+    margin-top: 0px;
     padding: 10px 20px;
     background-color: white;
     color:#000807;
